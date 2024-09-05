@@ -1,0 +1,113 @@
+\begin{document}
+\begin{center}
+    Kas's Data Communcation Review of Doom.
+\end{center}
+
+
+\begin{enumerate}
+    \item What are the major components of DC?\\
+          The message, senders, recievers, transmission medium, and protocol.
+
+    \item Describe what each one is.\\
+          Message: Information to be delievered.\\
+          Senders: devices that transmits the data messages.\\
+          Receivers: Devices that recieve the data messages.\\
+          Transmission Medium: Physical link that carries the data.\\
+          protocol: Set of rules that govern the Data communcation.\\
+
+    \item What are the three different types of data flows between devices?\\
+          Simplex: One way communcation.\\
+          Half Duplex: Bidirectional on one link.\\
+          Full Duplex: Bidirectional on two links.\\
+
+    \item What are the purposes of a network?\\
+          Distributing processing.\\
+          Sharing data vs centralization: shared access of data-banks among computers.\\
+          Security (not to be intruded) and robustness (not easy to break).\\
+
+          Distributed computers approach is for more security and reliability dependability.\\
+
+    \item Give a network criteria.\\
+          Performance: Response time. Packet throughput and delay.\\
+
+          Reliability: How often the networks fail.\\
+
+          Security: Privacy, integrity, and authentication of Communcation data. Recovery from breaches and data loss.\\
+
+    \item T/F Is source destination delay dynamic?\\
+          True.
+
+    \item Give a physical structure of a connection.\\
+          Point to point: Dedicated link to be utilized only by end devices.\\
+
+          Multipoint: Many end devices share the link capacity.\\
+
+
+
+    \item Explain two network topologies.\\
+
+          Mesh(Complete): Each devices has a dedicated point-to-point link to other devices.\\
+
+          Star: Devices are connected point to point to a central hub (Controller exchanger).\\
+
+          Bus: Multipoint link as a backbone for a network where devices have drop line to tap into bus.\\
+
+          Ring: Each station connects point to point with only two other stations. Stations are connected via repeater.\\
+
+          Hybrid: A combiation of different strategies.\\
+
+          Pizza: A Star inside a Ring. Effectively forming a pizza.\\
+
+    \item Give a pro and a con for each of the previously described topologies.\\
+          Mesh\\
+          Pro: Fast communcation, Robost and privacy. Easy to fault detect and isolate.\\
+          Con: Cabling size, fan-out ports, \textbf{scalability} and cost.\\
+
+          Star\\
+          Pro: Less links and ports per node, two hops delay only -- source to hub and hub destination delays. Cost of installation/operation and easyt o maintain when
+          nodes added or dropped.\\
+          Con: Not so robust (center of control is vunerable),  a lot more physical cables than a bus.\\
+
+          Bus\\
+          Pro: Less cabling one hop (source-destination) delay\\
+          Con:Scalability is limited and cable length depdent, which limit the number of nodes due to power loss with distance, not so robost, difficult fault isolation and collisions.\\
+
+          Ring\\
+          Pro: Easy installation, better fault isolation (dead node will be shorted and the ring is okay), and robustness.\\
+          Con: n/2 hops communication delay on averagbe, vulnerable to cuts. Broadcast network (no privacy)\\
+
+          Hybrid\\
+          Pro: Better domain seperation and one hope delay.\\
+          Con: Better robustness than the star but still vulnerable hub\\
+
+          Pizza\\
+          Pro: Better robustness (It's a ring system and a star combined.), low cost, 1 hop to neboring nodes or 2 to other nodes\\
+          Con: Cost of adding more cabling.\\
+
+
+    \item What are the categories of Networks?\\
+          Local area networks (LAN), Wide Area Networks (WAN), Metropolitatan area networks (MAN)\\
+
+    \item T/F the internet is a collation of Lans and Mans.\\
+          False it is also a collection of Wans.\\
+
+    \item What are the elements of a protocal.\\
+          Syntax, semantics, and timing.\\
+
+    \item What are the types of Standards and an example of each.\\
+          Defacto: Not approved but widely used TCP/IP.\\
+          De Jure: Approved by a recongized body: ISOOSI, IEEE.\\
+
+    \item are the two parts of Network architecture?\\
+          Hardware and Software.\\
+          Hardware is at the core of any network while softwate is to derive the core HW to communicate to end users.
+
+    \item What are the subtasks of a software model called?
+          A layer.\\
+
+    \item What is a protocol Data Unit (PDU)\\
+          it is passed to the layer beneath which in turns ads a header before assigning it to the next layer (par the physical layer.).
+
+\end{enumerate}
+
+\end{document}

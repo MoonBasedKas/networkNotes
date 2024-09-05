@@ -1,0 +1,162 @@
+\begin{document}
+\begin{center}
+    Kas's Network Model notes of DOOM
+\end{center}
+
+\begin{itemize}
+    \item What are the 7 layers of the OSI model?\\
+    Application, presentation, session, transport, network, data link, and physical.
+    Layers 7->1\\
+    \item True or False layers are peer-to-peer.\\
+        True\\
+    \item What does the physical layer do?\\
+    The physical layer moves bit sequences over a physical link.
+
+    \item Why is the physical layer important?\\
+    It defines how data is physically moved from point to point. Affecting protocols,
+    design and complexity of upper layers, and it may reduce the importance of or 
+    completely remove some layers.
+
+    \item What is the PDU in the physical layer?\\
+    Trick question. There is none.
+
+    \item List 4 things defined in the physical layer.\\
+    Physical characteristics of EIA 422/485 balanced mode interfaces and medium.\\
+    Bit representation.\\
+
+    Data rate\\
+
+    Bit sync: Sender and reciever clock sync at the same rate\\
+
+    Line configuration: Point-to-point or Multipoint.\\
+
+    Physical topology: Mesh, ring, bus, or hybrid.\\
+
+    Transfer mode: Simples, F/D, and H/D.\\
+
+    Physical media: TP, fiber optics, wireless,...\\
+
+    \item What are the two parts of the Data link layer?\\
+    Logic Link Control (LLC) and Multi Access Control (Mac)
+    forming the PDU and the address respectively.\\
+
+
+    \item What is the PDU of the data link layer?\\
+    It is a MAC sublayer frame with a header and a trailer.
+
+    \item What is the address of the data link layer.?\\
+    Mac address or MAC sublayer and the server access point (SAP) for the LLC sublayer.
+
+
+    \item What are two things the LLC does?\\
+    Framing/Deframing\\
+
+    Physical Addressing: sender/reciever address in the same header.\\
+
+    Flow Control: to prevent a faster sender from flooding a slower reciever.\\
+
+    Error Control: Increase physical reliablity by adding a mechanism to detect 
+    ReTx damages and lost frames. (trailer)//
+
+    \item Why do we want error control in the Data link layer?\\
+    Because at layer 4 it is more costly to correct errors rather than fixing it through an 
+    entire packet. Improving overall efficency.
+
+    \item What does the MAC do?\\
+    Control the access between connected all devices and manage bridging by ensuring that 
+    different protocol syntax and semantics are resolved.\\
+
+    \item what is bridging?\\
+    Using moving data through multiple LANs.\\
+
+    \item What is the third layer?
+    The networking layer.
+
+    \item what is a PDU?\\
+    Protocol data unit.
+
+    \item What is the PDU and address of the Networking layer?\\
+    PDU:packet\\
+    Address: Logical address (IP)\\
+
+    \item What are the functions of the Networking layer? Explain one\\
+    Routing and Internetworking.\\
+    Routing is determing what the next path in the network to take in order to 
+    determine the most efficent and/or secure path.\\
+    Internetworking is resolving any Network protocol conflicts while moving 
+    packets over a subnet of different protocols.\\
+
+    \item Why do we need Logical addressing.
+    Physical addresses are not enough to put in just the Data Link we need it in the header 
+    of the sender and reciever.\\
+
+    \item What is the fourth layer?\\
+    The Transport Layer.\\
+
+    \item What is the PDU and Addressing in the Transport Layer?\\
+    PDU: Segment\\
+    Address: Service Access Point (SAP)\\
+
+    \item Why is the transport layer important?\\
+    It provides abstraction and optimization of the complex detials of the subnet. Allowing for quality 
+    of service over the Network Layer protcol.\\
+
+    \item What are the responsibilites and provide an explanation of each.\\
+    Muxing/Demuxing: Converting data into Segments between host processes, at different 
+    machines, over the subnet trying for the most optimal use of the so it may Mux or Demux 
+    of segments over the Network layer?\\
+    Service Access Point Addressing: Network Layer logical address from source host to destination host
+    thus we need another address mechanism for SAP addressing within the same host system for user's 
+    process and message delievery.\\
+    Segmentation and deassembly: Converting segments into packets or vice versa. Each seperation 
+    is given a sequence for recombining later at the reciever.\\
+    Connection Control: How will data arrive Connection or connectionless.\\
+
+    Flow Control: Similar to Message Link but at the message level. What process is given priority.\\
+
+    Error Control: Catches errors in messages.\\
+
+
+    \item what is the difference between Muxing and DeMuxing?\\
+    Muxing will combine smaller packets into a much larger one for efficency.\\
+    DeMuxig will unwrap a larger piece of data into much smaller segments to 
+    send of the network for speed.\\
+
+    \item Why is error control in the transportation layer slower?\\
+    When a singular error is caught it will request that the sender recieve the entire 
+    message a second time. Where the Data link layer will only request a singular frame.
+
+
+    \item What are the 3 physical layers?\\
+    Layers 1-3 but the Physical, Datalink, and Network layers.\\
+
+    \item Where do the other layers occur?\\
+    On the sender/recievers machine.
+
+    \item what is the 5th layer?\\
+    Session Layer
+
+    \item What does the session layer do?\\
+    Dialog controls: Half-Duplex (H/D) or Full-Duplex (F/D)\\
+    Synchronization: Checkpoints are added to the data streams for dividing into units
+    of indepdent ACK. Communcation robostness in case of crashes.\\
+
+
+    \item What is the 6th layer?\\
+    The presentation layer.\\
+
+    \item What does the presentation layer do?\\
+    Translations: ASCII, EBCDIC, abstract syntax notation...\\
+    Encryption: Securing information for text privacy.\\
+    Compression: For efficent utlization of bandwidth.\\
+
+    \item What is the 7th layer of Networks?\\
+    The Application layer?\\
+
+    \item What are two purposes of the Application layer?\\
+    Virtual Terminal: Putty to allow remote logins (emulations).\\
+    File Transfer\\
+    Mail Service\\
+    Directory Service: HTTP for example\\
+\end{itemize}
+\end{document}
